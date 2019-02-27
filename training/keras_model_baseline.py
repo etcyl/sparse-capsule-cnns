@@ -3,6 +3,7 @@ Simple baseline to (hopefully) work from.
 Originally modified from source:
     
     https://towardsdatascience.com/building-a-convolutional-neural-network-cnn-in-keras-329fbbadc5f5
+    
 """
 
 from keras.models import Sequential # Common model for making a CNN in Keras
@@ -22,4 +23,3 @@ model.add(Conv2D(first_layer_neurons, kernel_size, activation=’relu’, input_
 model.add(Conv2D(second_layer_neurons, kernel_size, activation=’relu’))
 model.add(Flatten())
 model.add(Dense(output_layer_neurons, activation=’softmax’))
-
