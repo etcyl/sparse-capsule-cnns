@@ -19,7 +19,7 @@ kernel_size = 3
 #create model
 model = Sequential() # Typical model for making a CNN in Keras
 #add model layers
-model.add(Conv2D(first_layer_neurons, kernel_size, activation=’relu’, input_shape=(28,28,1))) 
-model.add(Conv2D(second_layer_neurons, kernel_size, activation=’relu’))
+model.add(Conv2D(first_layer_neurons, kernel_size, activation='relu', input_shape=(28,28,1))) 
+model.add(Conv2D(second_layer_neurons, kernel_size, activation='relu'))
 model.add(Flatten())
-model.add(Dense(output_layer_neurons, activation=’softmax’))
+model.add(Dense(output_layer_neurons, activation='softmax'))
